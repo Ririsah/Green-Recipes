@@ -1,0 +1,783 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #b8afa3;
+    margin: 40px 0px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper > div {
+    width: 70%;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: #ececec;
+    box-shadow: -1px 50px 30px 30px #9c968d;
+}
+
+/* ================ nav section ================= */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ececec;
+}
+
+.nav-itens {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    font-family: "Inria Serif", sans-serif;
+    font-size: 1.2rem;
+}
+
+.nav-itens > li > a,
+.green {
+    text-decoration: none;
+    color: #303030;
+    margin-right: 30px;
+}
+
+.green {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.logo {
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+}
+
+/* Responsividade nav */
+
+@media (max-width: 1600px) {
+    .wrapper > div {
+        width: 95%;
+    }
+
+    li,
+    a {
+        margin-left: 10px;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 0;
+    }
+
+    .wrapper > div {
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .logo {
+        width: 0;
+        height: 0;
+    }
+
+    .header-container {
+        padding: 5px 22px;
+    }
+}
+
+/* ================ cover section ================= */
+
+.cover-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: url("./imagens/cover.png") center / cover;
+    height: 700px;
+    width: 100%;
+}
+
+.text-cover {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #a0784a;
+    opacity: 90%;
+    width: 450px;
+    height: 100%;
+    color: #303030;
+}
+
+.text-cover > h1 {
+    color: #ffffff;
+    font-family: "Bodoni Moda", sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.text-cover > h2 {
+    font-family: "Inria Serif", sans-serif;
+    font-style: italic;
+    margin: -20px 0 40px 30px;
+}
+
+.text-cover > p {
+    font-family: "Inria Serif", sans-serif;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 10px 30px;
+}
+
+.text-cover > div {
+    display: flex;
+    align-items: center;
+    font-family: "Playfair Display", sans-serif;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.Eliza-photo {
+    background: url("./imagens/Eliza.png") center / cover;
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Responsividade cover */
+
+@media (max-width: 700px) {
+    .text-cover {
+        width: 100%;
+    }
+}
+
+/* ================ formulary section ================= */
+
+.formulary {
+    margin: 40px;
+    padding: 20px;
+    background-color: #545454;
+    border-radius: 4px;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inria Serif", sans-serif;
+    font-size: 1.3rem;
+    color: #ffffff;
+    border: none;
+}
+
+fieldset > input, 
+fieldset > button {
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    font-family: "Inria Serif", sans-serif;
+    font-size: 1.3rem;
+}
+
+fieldset > input {
+    margin-right: 10px;
+    padding: 0 10px;
+}
+
+.name-field {
+    width: 20%;
+    margin-left: 10px;
+}
+
+.email-field {
+    width: 40%;
+}
+
+fieldset > button {
+    width: 10%;
+    padding: 0 10px;
+    background-color: #ff914d;
+    color: #ffffff;
+}
+
+/* Responsividade formulary */
+
+@media (max-width: 1600px) {
+    .formulary > button {
+        width: 20%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .formulary-container {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .formulary-container {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .formulary,
+    .formulary > input,
+    .formulary > button {
+        font-size: 1rem;
+    }
+
+}
+
+/* ================ about section ================= */
+
+.about-container {
+    display: flex;
+    margin: 40px;
+    background-color: #e8e2d8;
+    font-family: "Inria Serif", sans-serif;
+    border-radius: 4px;
+    overflow: hidden;
+    min-height: 550px;
+}
+
+.about-box1 {
+    margin: 40px 50px;
+}
+
+.about-box1 > h2 {
+    font-size: 4rem;
+    color: #303030;
+}
+
+
+.about-box1 > hr {
+    border: 2px dashed #af8443;
+    margin-bottom: 60px;
+}
+
+.about-box1 > p {
+    font-style: italic;
+    color: #545454;
+    margin-top: 20px;
+}
+
+.about-box1-section {
+    display: flex;
+    margin-top: 50px;
+}
+
+.section {
+    display: flex;
+    color: #545454;
+    margin-right: 50px;
+}
+
+.section-text > h3 {
+    font-size: 1.3rem;
+}
+
+.section-text > p {
+    font-size: 0.7rem;
+    margin-top: 20px;
+}
+
+.badge-img {
+    width: 30px;
+    opacity: 70%;
+    margin-right: 10px;
+}
+
+.about-box2 {
+    background: url(./imagens/Eliza.png) center / cover;
+    width: 1300px;
+}
+
+/* Responsividade about */
+
+@media (max-width: 1300px) {
+    .about-container {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-container {
+        margin: 0;
+    }
+
+    .about-box1 > h2 {
+        font-size: 2.4rem;
+
+    }
+
+    .about-box1 {
+        margin: 40px 30px;
+    }
+}
+
+/* ================ Content section ================= */
+
+.content-container {
+    display: flex;
+    margin: 40px;
+}
+
+@media (max-width: 1300px) {
+    .content-container {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .content-container {
+        margin: 0px;
+        flex-direction: column;
+    }
+}
+
+/* ================ Recipes ================= */
+
+.recipes-container {
+    display: flex;
+    flex-direction: column;
+    font-family: "Inria Serif";
+}
+
+.search-bar {
+    background-color: #545454;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.search-bar > input {
+    border: none;
+    border-radius: 4px;
+    height: 40px;
+    font-family: "Inria Serif";
+    font-size: 1.3rem;
+    margin-right: 10px;
+    padding: 0 10px;
+    width: 75%;
+}
+
+.search-bar > button {
+    height: 40px;
+    width: 20%;
+    padding: 0 10px;
+    font-size: 1.3rem;
+    font-family: "Inria Serif";
+    background-color: #ff914d;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+}
+
+.search-bar-information {
+    color: #545454;
+}
+
+.dot {
+    width: 6%;
+    opacity: 70%;
+}
+
+.raiting {
+    width: 30%;
+    opacity: 70%;
+}
+
+.raiting-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+
+.btn-section {
+    background-color: #ffffff;
+    padding: 20px 20px;
+}
+
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.recipe-card {
+    max-width: 320px;
+    background-color: #e8e2d8;
+    margin-bottom: 40px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.description-section > h4,
+.description-section > p {
+    margin: 0 20px;
+    font-family: "Inria Serif";
+    color: #545454;
+}
+
+.recipe-card > p,
+.recipe-card > hr {
+    font-weight: bold;
+}
+
+.description-section > h4 {
+    font-size: 1.5rem;
+    margin: 10px 20px 10px 20px;
+}
+
+.description-section > hr {
+    margin: 0 20px;
+    border: 1px solid #545454;
+}
+
+.description-section > p {
+    font-style: italic;
+    font-weight: bold;
+    margin: 80px 20px 10px 20px;
+}
+
+.recipe-img-1 {
+    background: url(./imagens/receita4.png) center / cover;
+    height: 200px;
+}
+
+.recipe-img-2 {
+    background: url(./imagens/receita5.png) center / cover;
+    height: 200px;
+}
+
+.recipe-img-3 {
+    background: url(./imagens/receita6.png) center / cover;
+    height: 200px;
+}
+
+.recipe-img-4 {
+    background: url(./imagens/receita7.png) center / cover;
+    height: 200px;
+}
+
+.recipe-img-5 {
+    background: url(./imagens/receita8.png) center / cover;
+    height: 200px;
+}
+
+.recipe-img-6 {
+    background: url(./imagens/receita9.png) center / cover;
+    height: 200px;
+}
+
+.recipe-img-7 {
+    background: url(./imagens/receita10.png) center / cover;
+    height: 200px;
+}
+
+.recipe-img-8 {
+    background: url(./imagens/receita11.png) center / cover;
+    height: 200px;
+}
+
+.recipe-img-9 {
+    background: url(./imagens/receita1.png) center / cover;
+    height: 200px;
+}
+
+.btn-section > button {
+    font-family: "Inria Serif";
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 7px;
+    background-color: #545454;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 1300px) {
+    .search-bar > input {
+        width: 70%;
+        font-size: 1rem;
+    }
+    
+    .search-bar > button {
+        width: 20%;
+        font-size: 1rem;
+    }
+
+    .recipes-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .recipe-img-1,
+    .recipe-img-2,
+    .recipe-img-3,
+    .recipe-img-4,
+    .recipe-img-5,
+    .recipe-img-6,
+    .recipe-img-7,
+    .recipe-img-8,
+    .recipe-img-9 {
+        height: 130px;
+    }
+
+    .description-section > h4 {
+        font-size: 1.3rem;
+        margin: 10px 20px 10px 20px;
+    }
+    
+    .description-section > p {
+        margin: 40px 20px 10px 20px;
+        font-size: 0.8rem;
+    }
+
+    .btn-section > button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .search-bar {
+        border-radius: 0px;
+    }
+}
+
+/* ================ Socials ================= */
+
+.followers-container {
+    background-color: #ffffff;
+    font-family: "Inria Serif";
+    color: #545454;
+    margin: 0 0px 40px 55px;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 370px;
+}
+
+.followers-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #af8443;
+    color: #ffffff;
+    padding: 30px 30px;
+}
+
+.followers-title > h4 {
+    font-size: 1.5rem;
+}
+
+.follower-field {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.follower-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 25px 20px;
+}
+
+.follower-name > h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.follower-name > p {
+    font-weight: bold;
+    opacity: 40%;
+}
+
+#icon1 {
+    background: url(./imagens/pessoa1.jpg) center / cover;
+}
+
+#icon2 {
+    background: url(./imagens/pessoa2.jpg) center / cover;
+}
+
+#icon3 {
+    background: url(./imagens/pessoa3.jpg) center / cover;
+}
+
+#icon4 {
+    background: url(./imagens/pessoa4.jpg) center / cover;
+}
+
+#icon5 {
+    background: url(./imagens/pessoa5.jpg) center / cover;
+}
+
+.suggestion-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #545454;
+    font-family: "Inria Serif";
+    font-size: 1.3rem;
+    padding: 30px;
+    margin: 40px 0px 40px 55px;
+    border-radius: 4px;
+}
+
+.suggestion-container > p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.suggestion-container > input {
+    width: 95%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 5px;
+    margin: 20px 0;
+}
+
+.suggestion-container > textarea {
+    width: 99%;
+    border: none;
+    border-radius: 4px;
+}
+
+.suggestion-container > button {
+    height: 40px;
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-family: "Inria Serif";
+    background-color: #ff914d;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+}
+
+@media (max-width: 1300px) {
+    .followers-container {
+        margin-left: 20px;
+        max-width: 470px;
+    }
+}
+
+@media (max-width: 700px) {
+    .followers-container {
+        margin: 0px;
+        max-width: 650px;
+        border-radius: 0px;
+    }
+
+    .suggestion-container {
+        margin: 0px;
+        border-radius: 0px;
+    }
+}
+
+/* ================ Footer ================= */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background: url(./imagens/cover.png) center / cover;
+}
+
+.footer-container {
+    background-color: #a0784a;
+    opacity: 90%;
+    padding: 30px;
+}
+
+.footer-tittle {
+    font-size: 3rem;
+    font-family: "Bodoni Moda";
+    color: #ffffff;
+}
+
+.footer-container > hr {
+    border: 1px solid #303030;
+    margin-bottom: 30px;
+}
+
+.footer-services {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-family: "Inria Serif";
+    color: #303030;
+    margin: 30px 0px;
+}
+
+.service > h5 {
+    font-size: 2rem;
+    margin-bottom: 60px;
+    color: #303030;
+}
+
+.service > li {
+    list-style-type: none;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.service > li > a {
+    text-decoration: none;
+    color: #303030;
+    margin-left: 0px;
+}
+
+.num,
+.social {
+    font-style: italic;
+}
+
+.footer-container > p {
+    font-family: "Inria Serif";
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 700px) {
+    .service > h5 {
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+    
+    .service > li {
+        font-size: 0.7rem;
+    }
+}
